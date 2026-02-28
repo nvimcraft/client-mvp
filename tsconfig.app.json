@@ -29,16 +29,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "prettier.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    ".vite",
-    "coverage"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "prettier.config.ts"],
+  "exclude": ["node_modules", "dist", "build", ".vite", "coverage"]
 }
