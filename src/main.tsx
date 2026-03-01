@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from '@dr.pogodin/react-helmet'
 import { createRouter, RouterProvider } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen'
+import './styles/globals.css'
 
 const rootElement = document.getElementById('root')
 
