@@ -5,3 +5,8 @@
   margin: 0;
   padding: 0;
 }
+
+.socials__link:hover {
+  color: var(--red);
+  transition: color 0.3s ease-in-out;
+}
