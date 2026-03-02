@@ -3,8 +3,6 @@ import type { IconProps } from '@/types/icons'
 
 const SunIcon = ({
   size = 24,
-  ariaLabel = 'Sun Icon',
-  title = 'Switch to Light Mode',
   ref,
   ...props
 }: IconProps): React.JSX.Element => {
@@ -20,11 +18,10 @@ const SunIcon = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      aria-label={ariaLabel}
-      role="img"
+      aria-hidden="true"
+      focusable="false"
       {...props}
     >
-      <title>{title}</title>
       <circle cx="12" cy="12" r="4" />
       <path d="M12 3v1" />
       <path d="M12 20v1" />

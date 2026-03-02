@@ -1,13 +1,7 @@
 import type React from 'react'
 import type { IconProps } from '@/types/icons'
 
-const Logo = ({
-  size = 24,
-  ariaLabel = 'Site Logo',
-  title = 'Go to Home Page',
-  ref,
-  ...props
-}: IconProps): React.JSX.Element => {
+const Logo = ({ size = 24, ref, ...props }: IconProps): React.JSX.Element => {
   return (
     <svg
       ref={ref}
@@ -20,11 +14,10 @@ const Logo = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      aria-label={ariaLabel}
-      role="img"
+      aria-hidden="true"
+      focusable="false"
       {...props}
     >
-      <title>{title}</title>
       <rect width="9" height="6" x="6" y="14" rx="2" />
       <rect width="16" height="6" x="6" y="4" rx="2" />
     </svg>
