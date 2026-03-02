@@ -1,6 +1,7 @@
 import { Helmet } from '@dr.pogodin/react-helmet'
 import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+import Header from '@/components/ui/Header/Header'
 import SkipLink from '@/components/ui/SkipLink/SkipLink'
 
 export const Route = createRootRoute({
@@ -11,10 +12,11 @@ export const Route = createRootRoute({
         <meta name="author" content="RJ Leyva <rjleyva@tutanota.de>" />
       </Helmet>
       <SkipLink />
+      <Header />
       <main id="main-content">
         <Outlet />
       </main>
-      <TanStackRouterDevtools />
+      <TanStackRouterDevtools aria-hidden="true" />
     </>
   ),
 })
