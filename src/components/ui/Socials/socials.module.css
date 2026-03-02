@@ -1,0 +1,7 @@
+.socials__list {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
