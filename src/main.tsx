@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from '@dr.pogodin/react-helmet'
 import { createRouter, RouterProvider } from '@tanstack/react-router'
+import { ThemeProvider } from './contexts/ThemeProvider'
 import { routeTree } from './routeTree.gen'
 import './styles/globals.css'
 
@@ -24,7 +25,9 @@ declare module '@tanstack/react-router' {
 createRoot(rootElement).render(
   <StrictMode>
     <HelmetProvider>
-      <RouterProvider router={router} />
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </HelmetProvider>
   </StrictMode>
 )

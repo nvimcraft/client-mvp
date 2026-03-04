@@ -13,3 +13,9 @@
   max-width: 40rem;
   height: 6rem;
 }
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
