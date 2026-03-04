@@ -1,5 +1,8 @@
 import { fileURLToPath, URL } from 'node:url'
+import remarkGfm from 'remark-gfm'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import { defineConfig } from 'vite'
+import mdx from '@mdx-js/rollup'
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react'
 
@@ -15,6 +18,10 @@ export default defineConfig({
       babel: {
         plugins: ['babel-plugin-react-compiler'],
       },
+    }),
+
+    mdx({
+      remarkPlugins: [remarkGfm, remarkMdxFrontmatter],
     }),
   ],
 
