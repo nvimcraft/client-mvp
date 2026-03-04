@@ -1,0 +1,49 @@
+.hero {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 1rem;
+}
+
+.hero__heading {
+  font-size: clamp(1.6rem, 2vw + 1rem, 2rem);
+  font-weight: 900;
+}
+
+.hero__waving-emoji {
+  animation: wave 2.5s ease-in-out;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+.hero__sub-heading {
+  font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.2rem);
+  font-weight: 400;
+  margin-block: 0;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  10% {
+    transform: rotate3d(0, 0, 1, -30deg);
+  }
+  20% {
+    transform: rotate3d(0, 0, 1, 25deg);
+  }
+  30% {
+    transform: rotate3d(0, 0, 1, -20deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
