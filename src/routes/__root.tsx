@@ -7,8 +7,11 @@ import SkipLink from '@/components/ui/SkipLink/SkipLink'
 export const Route = createRootRoute({
   component: () => (
     <>
-      <Helmet titleTemplate="%s | Client MVP" defaultTitle="Client MVP">
-        <meta name="description" content="Client MVP" />
+      <Helmet>
+        <meta
+          name="description"
+          content="Web development insights and ideas."
+        />
         <meta name="author" content="RJ Leyva <rjleyva@tutanota.de>" />
       </Helmet>
       <SkipLink />
