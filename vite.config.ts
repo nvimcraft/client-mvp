@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
+import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import { defineConfig } from 'vite'
@@ -21,7 +22,7 @@ export default defineConfig({
     }),
 
     mdx({
-      remarkPlugins: [remarkGfm, remarkMdxFrontmatter],
+      remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
     }),
   ],
 
