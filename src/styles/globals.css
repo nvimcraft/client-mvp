@@ -1,6 +1,7 @@
 @import 'modern-normalize' layer(reset);
 @import 'themes.css';
 @import 'fonts.css';
+@import 'prose.css';
 
 @layer reset,
 base,
