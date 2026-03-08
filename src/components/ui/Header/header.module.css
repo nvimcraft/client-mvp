@@ -6,6 +6,7 @@
 
 .header__nav {
   align-items: center;
+  background: var(--background);
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
