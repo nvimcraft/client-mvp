@@ -1,5 +1,5 @@
 .hero {
-  margin: 0 auto;
+  margin: 6rem auto;
   max-width: 40rem;
   padding: 0 1rem;
 }
@@ -7,6 +7,7 @@
 .hero__heading {
   font-size: clamp(1.6rem, 2vw + 1rem, 2rem);
   font-weight: 900;
+  margin: 0;
 }
 
 .hero__waving-emoji {
