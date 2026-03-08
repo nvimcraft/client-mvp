@@ -1,28 +1,28 @@
 # client-mvp
 
+![Client MVP screenshot](./assets/client-mvp-screenshot.jpeg)
+
 ## Stack
 
 ### Client
 
-- CSS
-- Vite (rolldown-vite)
-- React
+- React 19
 - React Compiler
 - TypeScript
 - TanStack Router
+- Vite
 
 ### Markdown
 
-- unified
-- remark-parse / remark-rehype
-- rehype-react / rehype-sanitize / rehype-slug
+- MDX
 - remark-gfm
-- remark-frontmatter
+- remark-mdx-frontmatter
+- Shiki (syntax highlighting)
 
 ### Tooling
 
 - pnpm
-- Prettier
+- Prettier (with import sorting)
 - ESLint
 - TypeScript
 
