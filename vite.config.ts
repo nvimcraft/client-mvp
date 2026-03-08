@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import { defineConfig } from 'vite'
 import mdx from '@mdx-js/rollup'
+import rehypeShiki from '@shikijs/rehype'
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import react from '@vitejs/plugin-react'
 
@@ -23,6 +24,17 @@ export default defineConfig({
 
     mdx({
       remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
+      rehypePlugins: [
+        [
+          rehypeShiki,
+          {
+            themes: {
+              light: 'everforest-dark',
+              dark: 'everforest-dark',
+            },
+          },
+        ],
+      ],
     }),
   ],
 
