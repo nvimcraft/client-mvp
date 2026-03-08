@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from '@dr.pogodin/react-helmet'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/posts/$slug')({
@@ -28,10 +29,15 @@ function RouteComponent(): React.ReactElement {
   const { component: MDXContent, frontmatter } = Route.useLoaderData()
 
   return (
-    <article>
-      <h1>{frontmatter.title}</h1>
-      <time>{frontmatter.date}</time>
-      <MDXContent />
-    </article>
+    <>
+      <Helmet>
+        <title>nvimcraft | {frontmatter.title}</title>
+      </Helmet>
+      <article>
+        <h1>{frontmatter.title}</h1>
+        <time>{frontmatter.date}</time>
+        <MDXContent />
+      </article>
+    </>
   )
 }
