@@ -13,7 +13,6 @@ const config: Config = {
   importOrder: [
     '<BUILTIN_MODULES>',
     '^react',
-    '^@supabase/',
     '<THIRD_PARTY_MODULES>',
     '^types$',
     '^@types',
