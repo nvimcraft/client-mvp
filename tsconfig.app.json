@@ -29,6 +29,11 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "prettier.config.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "prettier.config.ts",
+    "vitest.setup.ts"
+  ],
   "exclude": ["node_modules", "dist", "build", ".vite", "coverage"]
 }
