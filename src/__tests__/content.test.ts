@@ -13,8 +13,9 @@ describe('content.ts', () => {
         currentIndex < allPosts.length;
         currentIndex++
       ) {
-        const previousPost = allPosts[currentIndex - 1]!
-        const currentPost = allPosts[currentIndex]!
+        const previousPost = allPosts[currentIndex - 1]
+        const currentPost = allPosts[currentIndex]
+        if (!previousPost || !currentPost) return
         const previousDate = new Date(previousPost.date).getTime()
         const currentDate = new Date(currentPost.date).getTime()
         expect(previousDate).toBeGreaterThanOrEqual(currentDate)
@@ -109,8 +110,9 @@ describe('content.ts', () => {
         currentIndex < latestPosts.length;
         currentIndex++
       ) {
-        const previousPost = latestPosts[currentIndex - 1]!
-        const currentPost = latestPosts[currentIndex]!
+        const previousPost = latestPosts[currentIndex - 1]
+        const currentPost = latestPosts[currentIndex]
+        if (!previousPost || !currentPost) return
         const previousDate = new Date(previousPost.date).getTime()
         const currentDate = new Date(currentPost.date).getTime()
         expect(previousDate).toBeGreaterThanOrEqual(currentDate)
