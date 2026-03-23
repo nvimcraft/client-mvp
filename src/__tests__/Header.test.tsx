@@ -1,7 +1,7 @@
 import type React from 'react'
 import { describe, expect, it, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import Header from './Header'
+import Header from '@/components/ui/Header/Header'
 
 vi.mock('@/components/icons/Logo', () => ({
   default: (): React.JSX.Element => <svg data-testid="logo" />,

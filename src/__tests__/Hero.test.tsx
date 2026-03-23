@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import Hero from './Hero'
+import Hero from '@/components/ui/Hero/Hero'
 
 vi.mock('@/lib/content', () => ({
   getLatestPosts: vi.fn(() => []),
