@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from '@dr.pogodin/react-helmet'
 import { createFileRoute } from '@tanstack/react-router'
+import Giscus from '@/components/ui/Giscus/Giscus'
 
 export const Route = createFileRoute('/posts/$slug')({
   loader: ({ params }: { params: { slug: string } }) => {
@@ -27,6 +28,7 @@ export const Route = createFileRoute('/posts/$slug')({
 })
 function RouteComponent(): React.ReactElement {
   const { component: MDXContent, frontmatter } = Route.useLoaderData()
+  const { slug } = Route.useParams()
 
   return (
     <>
@@ -37,6 +39,7 @@ function RouteComponent(): React.ReactElement {
         <h1>{frontmatter.title}</h1>
         <time>{frontmatter.date}</time>
         <MDXContent />
+        <Giscus term={slug} />
       </article>
     </>
   )

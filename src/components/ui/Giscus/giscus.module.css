@@ -1,0 +1,15 @@
+.giscus-section {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--background-soft);
+}
+
+.giscus-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+}
+
+.giscus-wrapper {
+  max-width: 100%;
+}
