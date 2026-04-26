@@ -22,7 +22,7 @@
     "@giscus/react": "^3.1.0",
     "@mdx-js/rollup": "^3.1.1",
     "@shikijs/rehype": "^4.0.1",
-    "@tanstack/react-router": "^1.166.2",
+    "@tanstack/react-router": "^1.168.24",
     "modern-normalize": "^3.0.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
